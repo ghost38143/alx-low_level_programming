@@ -1,11 +1,7 @@
 #include <stdio.h>
 /**
  * main - A program that prints the sizeof various computer data types
- * This program prints the size, in bytes, of various computer data types
- * such as char, int, long int, long long int, and float. It demonstrates
- * how to use the sizeof operator to determine the memory consumption of
- * different data types on your computer architecture
- * return: 0 (success)
+ * Return: 0 (success)
  */
 int main(void)
 {

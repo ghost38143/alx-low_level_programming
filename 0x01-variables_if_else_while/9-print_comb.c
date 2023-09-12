@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - printing numbers with  comma 
+ * main - printing numbers with a comma 
  * Return: always (success)
  */
 int main(void)

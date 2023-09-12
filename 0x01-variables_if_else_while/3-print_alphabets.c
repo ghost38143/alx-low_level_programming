@@ -4,6 +4,7 @@
  * Return: always  (success)
  */
 int main(void)
+
 {
        	char c = 'a';
 

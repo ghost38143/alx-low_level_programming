@@ -4,7 +4,8 @@
  * @n: the number to be determined
  * Return: void
  */
-void print_times_table(int n){
+void print_times_table(int n)
+
 	{
 		int num, multi, prod;
 
@@ -29,7 +30,7 @@ void print_times_table(int n){
 					}
 					else if (prod <= 99 && prod >= 10)
 					{
-						_putchar((prod / 10) + '0');
+						_putchar ((prod / 10) + '0');
 					}
 					_putchar ((prod % 10) + '0');
 				}
@@ -37,6 +38,7 @@ void print_times_table(int n){
 			}
 		}
 	}
+
 
 
 

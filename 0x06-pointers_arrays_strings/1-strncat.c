@@ -1,5 +1,4 @@
 #include "main.h"
-#include <string.h>
 /**
  * _strncat - linking strings
  * @dest: the string to be copied to

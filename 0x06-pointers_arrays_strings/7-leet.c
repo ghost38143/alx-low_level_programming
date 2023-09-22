@@ -7,31 +7,21 @@
 char *leet(char *s)
 {
 	int i;
+	char map[128] = {0};
+
+	map['a'] = map['A'] = '4';
+	map['e'] = map['E'] = '3';
+	map['o'] = map['O'] = '0';
+	map['t'] = map['T'] = '7';
+	map['l'] = map['L'] = '1';
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
-		if (s[i] == 'a' || s[i] == 'A')
+		char c = s[i];
+		if (map[(int)c] == 0)
 		{
-			s[i] = '4';
-		}
-		else if (s[i] == 'e' || s[i] == 'E')
-		{
-			s[i] = '3';
-		}
-		else if (s[i] == 'o' || s[i] == 'O')
-		{
-			s[i] = '0';
-		}
-		else if (s[i] == 't' || s[i] == 'T')
-		{
-			s[i] = '7';
-		}
-		else if (s[i] == 'l' || s[i] == 'L')
-		{
-			s[i] = '1';
+			s[i] = map[(int)c];
 		}
 	}
-	printf("\n");
 	return (s);
 }
-

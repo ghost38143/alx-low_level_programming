@@ -2,6 +2,7 @@
 #define _SAMPLE_HEADER_H_
 #include <string.h>
 #include <stdio.h>
+char *rot13(char *);
 char *leet(char *);
 int _putchar(char c);
 char *_strcat(char *dest, char *src);

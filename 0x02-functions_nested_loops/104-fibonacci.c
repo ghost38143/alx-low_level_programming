@@ -16,4 +16,5 @@ int main(void)
 		j = k - j;
 		printf("%ld, ", k);
 	}
+	return (0);
 }

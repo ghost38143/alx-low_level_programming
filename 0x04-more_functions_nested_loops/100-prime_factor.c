@@ -1,41 +1,34 @@
 #include <stdio.h>
-#include <math.h>
-
-void primeFactors(long int n)
-{
-	int i;
-
-	while (n % 2 == 0)
-	{
-		printf("%d ", 2);
-		n = n / 2;
-	}
-	for (i = 3; i * i <= n; i = i + 2)
-	{
-		while (n % i == 0)
-		{
-			printf("%d ", i);
-			n = n / i;
-		}
-	}
-	if (n > 2)
-	{
-		printf("%ld ", n);
-	}
-}
+/**
+ * main - printing the prime factors of a value
+ * @n: the value
+ * Return: void
+ */
 int main(void)
 {
-	long int n = 612852475143;
+	long int n;
+	int i;
 
-	if (n <= 1)
-      	{
-		printf("Prime factors are not defined for numbers less than or equal to 1.\n");
-	}
-	else
+	n = 612852475143;
+
+	if (n % 2 == 0)
 	{
-		printf("Prime factors of %ld are: ", n);
-		primeFactors(n);
-		printf("\n");
+		printf("%d, ", 2);
+		n /= 2;
 	}
+	for (i = 3; i * i <= n; i += 2)
+	{
+		if (n % i == 0)
+		{
+			printf("%d, ", i);
+			n /= i;
+		}
+	}
+	if (n > 1)
+	{
+		printf("%ld", n);
+	}
+	printf("\n");
 	return (0);
 }
+

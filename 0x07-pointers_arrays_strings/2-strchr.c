@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stddef.h>
 /**
- * *_strchr - locating a charcter in a string
+ * *_strchr - locating a charcter in a string and returning null if not present
  * @s: the string to checked
  * @c: the charcter to be located
  * Return: c if a success and null if fail
@@ -17,7 +17,7 @@ char *_strchr(char *s, char c)
 			return (&(s[i]));
 		}
 	}
-	return (NULL);
+	return ('\0');
 }
 
 

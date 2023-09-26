@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stddef.h>
 /**
  * *_strchr - locating a charcter in a string and returning null if not present
  * @s: the string to checked

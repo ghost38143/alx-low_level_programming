@@ -10,8 +10,14 @@ int _sqrt_recursion(int n)
 	{
 		return (-1);
 	}
-	return actual_sqrt_recursion (n, 1);
+	return (actual_sqrt_recursion(n, 1));
 }
+/**
+ * actual_sqrt_recursion - reurse to find the natural
+ * @n: number to calculate the square root of
+ * @num: iterator
+ * Return: value
+ */
 int actual_sqrt_recursion(int n, int num)
 {
 	if (num * num == n)
@@ -24,6 +30,6 @@ int actual_sqrt_recursion(int n, int num)
 	}
 	else
 	{
-		return actual_sqrt_recursion(n, num + 1);
+		return (actual_sqrt_recursion(n, num + 1));
 	}
 }

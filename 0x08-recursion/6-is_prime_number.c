@@ -14,7 +14,7 @@ int is_prime_number(int n)
 	}
 	else
 	{
-		return (actual_prime_number (n, n - 1));
+		return (actual_prime_number(n, n - 1));
 	}
 }
 /**
@@ -32,5 +32,5 @@ int actual_prime_number(int n, int num)
 	{
 		return (0);
 	}
-	return actual_prime_number(n, num - 1);
+	return (actual_prime_number(n, num - 1));
 }

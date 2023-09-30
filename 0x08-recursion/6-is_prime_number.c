@@ -20,6 +20,7 @@ int is_prime_number(int n)
 /**
  * actual_prime_number - the second function to check
  * @n: the value
+ * @num: the guessing value
  * Return: value
  */
 int actual_prime_number(int n, int num)

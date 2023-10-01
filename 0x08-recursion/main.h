@@ -12,5 +12,7 @@ int is_palindrome(char *s);
 int wildcmp(char *s1, char *s2);
 int _putchar(char c);
 int actual_sqrt_recursion(int n, int num);
+int strlen_recursion(char *s);
+int comparator(char *s, int n1, int n2);
 
 #endif

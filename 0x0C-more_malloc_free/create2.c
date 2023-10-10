@@ -17,10 +17,15 @@ int main(void)
 	{
 		A[i] = i + 1;
 	}
-	free (A);
-	for (i = 0; i < n; i++)
+	int *B = realloc(A, 0);/*this is is equivalent as saying free(A)*/
+	printf("the address of old %p, the new address %p", A, B);
+	for (i = 5; i < 2*n; i++)
 	{
-		printf("%d ", A[i]);
+		B[i] = i + 1;
+	}
+	for (i = 5; i < 2*n; i++)
+	{
+		printf("%d \n", B[i]);
 	}
 	printf("\n");
 	return (0);

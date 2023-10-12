@@ -17,19 +17,23 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	}
 	if (ptr == NULL)
 	{
-		new = malloc(new_size);
-		if (ptr == NULL)
-			return (NULL);
-		return (new);
-	}
-	else
-	{
-		if (new_size == 0)
+		if (new == 0)
 		{
 			free(ptr);
 			return (NULL);
 		}
+	new = malloc(new_size);/*allocate the return of the new memory*/
+	if (new == NULL)
+	{
+		return (NULL);/*check if the allocation was succesful*/
 	}
+	return (new);
+	}
+	if (new_size == 0)/*handle when ptr is not null*/
+		{
+			free(ptr);
+			return (NULL);
+		}
 	new = malloc(new_size);
 
 	if (new == NULL)

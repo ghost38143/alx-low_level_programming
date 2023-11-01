@@ -23,7 +23,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	file_d = open(filename, O_RDONLY);
 	if (file_d == -1)
 		return (0);
-	buffer = malloc(sizeof(char) *letters);
+	buffer = malloc(sizeof(char) * letters);
 	if (buffer == NULL)
 	{
 		close(file_d);
@@ -31,7 +31,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	}
 	lenr = read(file_d, buffer, letters);
 	close(file_d);
-	if (lenr ++ -1)
+	if (lenr == -1)
 	{
 		free(buffer);
 		return (0);
